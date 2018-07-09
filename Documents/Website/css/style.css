@@ -1,0 +1,42 @@
+#intro {
+  position: relative;
+  background: url("../img/merlene-goulet-51572-unsplash.jpg");
+  min-height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #intro .primary-overlay {
+    background: rgba(65, 5, 77, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+#chargeDeer {
+  width: 80px; }
+
+.navbar {
+  background: #fff; }
+  .navbar .nav-item {
+    font-size: 1.4rem;
+    padding-right: 1.4rem; }
+
+#twitterBot .twitter-timeline {
+  max-width: 100%;
+  max-height: 1000px; }
+#twitterBot .fa {
+  font-size: 25px;
+  color: #FFFFFF; }
+#twitterBot .panel-title {
+  font-size: 25px;
+  color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif; }
+#twitterBot .panel-heading {
+  background-color: #1da1f2 !important;
+  color: #1da1f2 !important; }
+#twitterBot .panel {
+  margin-top: 25px; }
+#twitterBot .twitter-tweet {
+  max-width: 100%;
+  max-height: 1000px; }
