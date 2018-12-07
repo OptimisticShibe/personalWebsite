@@ -2,26 +2,22 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 @import url("https://fonts.googleapis.com/css?family=Oswald");
 
-html,
-body {
-  margins: 0;
+html, body {
+  margin: 0;
   padding: 0;
-  height: 100;
-  width: 100;
-}
-
-body {
-  display: block;
+  height: 100%;
+  width: 100%;
 }
 
 #intro {
-  position: relative;
-  background: url("../img/merlene-goulet-51572-unsplash.jpg");
-  min-height: 700px;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url("/img/AutumnalDeer.jpg") no-repeat 50% 50%;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  display: flex;
   background-size: cover;
 }
+
 #intro .primary-overlay {
   background: rgba(65, 5, 77, 0.6);
   position: absolute;
@@ -31,39 +27,30 @@ body {
   height: 100%;
 }
 
-#chargeDeer {
-  width: 80px;
+.container-fluid {
+  height: 100%;
 }
 
-.navbar {
-  background: #fff;
-}
-.navbar .nav-item {
-  font-size: 1.4rem;
-  padding-right: 1.4rem;
-}
-
-#twitterBot .twitter-timeline {
+#main {
+  -moz-transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -moz-transform: rotateX(0deg);
+  -webkit-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -moz-transition: opacity 1s ease, -moz-transform 1s ease;
+  -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+  -ms-transition: opacity 1s ease, -ms-transform 1s ease;
+  transition: opacity 1s ease, transform 1s ease;
+  padding: 4.5em 3em 3em 3em ;
+  background: #ffffff;
+  border-radius: 4px;
+  cursor: default;
   max-width: 100%;
-  max-height: 1000px;
-}
-#twitterBot .fa {
-  font-size: 25px;
-  color: #ffffff;
-}
-#twitterBot .panel-title {
-  font-size: 25px;
-  color: #ffffff;
-  font-family: "Open Sans", sans-serif;
-}
-#twitterBot .panel-heading {
-  background-color: #1da1f2 !important;
-  color: #1da1f2 !important;
-}
-#twitterBot .panel {
-  margin-top: 25px;
-}
-#twitterBot .twitter-tweet {
-  max-width: 100%;
-  max-height: 1000px;
+  opacity: 0.95;
+  position: relative;
+  text-align: center;
+  width: 27em;
 }

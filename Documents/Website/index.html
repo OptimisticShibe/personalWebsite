@@ -1,148 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/bootstrap.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/bootstrap.css" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
 
     <title>Rafiq Ramadan - Developer</title>
-</head>
-    <body>
+    <style>
+        .item-hl {
+            border: 2px solid #333;
+        }
+    </style>
+  </head>
+  <body>
     <!-- INTRO/SPLASH PAGE -->
-    <section id="intro" class="py-5">
-        <div class="primary-overlay text-orchid">
-            <div class="container">
-                <div class="row my-5">
-                    <div class="col-lg-4 text-left order-1 px-2 text-dark">
-                        <div class="card bg-orchid">
-                            <div class="card-body">
-                                <h3 class="display-3 text-center">
-                                    Hello!
-                                </h3>
-                                <p class="lead text-center">My name is Rafiq, and I'm a full-stack developer.</p>
-                                <hr>
-                                <div class="media">
-                                    <!-- <img id="chargeDeer" src="img/regal half Fluer.png" style="
-                                    transform: rotate(90deg);" class="align-self-center mr-3"> -->
-                                    <img id="chargeDeer" src="img/regal charging deer.png" class="align-self-center mr-3">
-                                    <div class="media-body">
-                                        <ul class="list-unstyled">
-                                            <li class="py-1">Front-End development</li>
-                                            <li class="py-1">Back-End development: C# and Java</li>
-                                            <li class="py-1">Server Management: MySQL</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 order-2 px-3">
-                        <img src="img/regal circle.png" alt="logo" class="img-fluid d-none d-lg-block" height="600" width="600">
-                        <!-- <a href="#" class="btn btn-orchid btn-lg text-dark btn-block text-left mt-2">
-                            <i class="fas fa-portrait"></i> About Me
-                        </a>
-                        <a href="#" class="btn btn-orchid btn-lg text-dark btn-block text-left">
-                            <i class="fas fa-file-code"></i> Project Details
-                        </a>
-                        <a href="#" class="btn btn-orchid btn-lg text-dark btn-block text-left mb-2">
-                            <i class="fas fa-envelope"></i> Contact Info
-                        </a> -->
-                    </div>
-                    <!-- ACCORDION -->
-                    <div class="col-lg-4 order-3 text-dark  px-3">
-                        <div id="accordion">
-                            <div class="card bg-orchid">
-                                <div class="card-header">
-                                    <h2 class="text-center">My Projects</h2>
-                                </div>
-                                <div class="card-header">
-                                    <h5 class="mb-0">
-                                        <div href="#collapse1" data-toggle="collapse" data-parent="#accordion">
-                                            <i class="fas fa-robot fa-2x"></i> Twitter Bot
-                                        </div>
-                                    </h5>
-                                </div>
-                                <div class="collapse show" id="collapse1">
-                                    <div class="card-body">
-                                        <p>An "eBooks-style" twitter bot built on node.js with markov-string tweet generation</p>
-                                        <p>
-                                            <button class="btn btn-block btn-outline-lilac text-dark">Details</button>
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="card-header">
-                                    <h5 class="mb-0">
-                                        <div href="#collapse2" data-toggle="collapse" data-parent="#accordion">
-                                            <i class="fab fa-d-and-d fa-2x"></i> Discord DnD Dice Bot
-                                        </div>
-                                    </h5>
-                                </div>
-                                <div class="collapse" id="collapse2">
-                                    <div class="card-body">
-                                        <p>A simple, custom Discord Chat Bot built with C# to roll dice and assist in DnD roleplaying</p>
-                                        <p>
-                                            <button class="btn btn-block btn-outline-lilac text-dark">Details</button>
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="card-header">
-                                    <h5 class="mb-0">
-                                        <div href="#collapse3" data-toggle="collapse" data-parent="#accordion">
-                                            <i class="fas fa-globe fa-2x"></i> Personal Website
-                                        </div>
-                                    </h5>
-                                </div>
-                                <div class="collapse" id="collapse3">
-                                    <div class="card-body">
-                                        <p>This website is built with Bootstrap CSS and hosted as a static site</p>
-                                        <p>
-                                            <button class="btn btn-block btn-outline-lilac text-dark">Details</button>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <section id="intro">
+      <div class="primary-overlay text-orchid">
+        <div class="container-fluid wrapper item-hl">
+          <div class="d-flex flex-column ">
+            <div class="d-flex justify-content-center mx-auto p-4" id="main">Box Goes Here</div>
+            <div class="d-flex p-4 mx-auto item-hl" id="footer">
+              Copyright &copy; <span id="year"></span>
             </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer id="main-footer" class="py-3 bg-orchid text-dark">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-6 ml-auto">
-                    <p class="lead">
-                        Copyright &copy;
-                        <span id="year"></span>
-                    </p>
-                </div>
-            </div>
+          </div>
         </div>
-    </footer>
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-        crossorigin="anonymous"></script>
-
-
-
+      </div>
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
     <script>
-        // Get the current year for the copyright
-        $('#year').text(new Date().getFullYear());
+      // Get the current year for the copyright
+      $("#year").text(new Date().getFullYear());
     </script>
-
-</body>
-
+  </body>
 </html>
