@@ -2,9 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 @import url("https://fonts.googleapis.com/css?family=Oswald");
 
-html, body {
-  margin: 0;
-  padding: 0;
+#main-header {
   height: 100%;
   width: 100%;
 }
@@ -12,35 +10,52 @@ html, body {
 #main-header img{
   width: 100%;
   height: 100%;
-  /* clip-path: circle(); USE THIS IF YOU NEED TO MAKE IMAGES CIRCULAR*/
 }
 
-#intro {
+.bg-darker {
+  background: rgba(77, 5, 41, 0.7);
+}
+
+.bg-lighter {
+  background: rgba(156, 29, 93, 0.7);
+}
+
+html, body {
   background: url("/img/AutumnalDeer.jpg") no-repeat 50% 50%;
   height: 100%;
   width: 100%;
   margin: auto;
   display: flex;
   background-size: cover;
+  font-family: 'Raleway', sans-serif;
 }
 
 #intro .primary-overlay {
   background: rgba(65, 5, 77, 0.6);
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
 
-.container {
+#intro .secondary-overlay {
+  background: rgba(221, 23, 23, 0.1);
+  position: absolute;
+  width: 100%;
   height: 100%;
-  /* background: #ffffff; */
+}
+
+#main-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  opacity: .4;
 }
 
 #main-header .extra-item {
   width: 30%;
-
 }
 #main-header .extra-item:hover {
   width: 30%;
@@ -49,8 +64,8 @@ html, body {
   
 }
 
-.bg-black {
-  opacity: 0;
+.th {
+  font-size: 30px;
 }
 
 @media(min-width: 1199px) {
@@ -58,30 +73,8 @@ html, body {
     padding: 3em !important;
   }
 }
-/* #wrapper {
-  min-height: 100%;
-  position: relative;
-} */
-/* 
-#main {
-  -moz-transform-origin: 50% 50%;
-  -webkit-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  -moz-transform: rotateX(0deg);
-  -webkit-transform: rotateX(0deg);
-  -ms-transform: rotateX(0deg);
-  transform: rotateX(0deg);
-  -moz-transition: opacity 1s ease, -moz-transform 1s ease;
-  -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
-  -ms-transition: opacity 1s ease, -ms-transform 1s ease;
-  transition: opacity 1s ease, transform 1s ease;
-  padding: 4.5em 3em 3em 3em ; 
-  background: #ffffff;
-  border-radius: 4px;
-  cursor: default;
-  max-width: 100%;
-  opacity: 0.95;
-  position: relative;
-  text-align: center;
-} */
+
+.container {
+  height: 100%;
+  width: 100%;
+}
