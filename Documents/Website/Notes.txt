@@ -1,1 +1,0 @@
-Homepage = "Hi I'm Rafiq Ramadan" I do software stuff look at my projects!

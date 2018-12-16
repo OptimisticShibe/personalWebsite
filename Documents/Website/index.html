@@ -18,34 +18,43 @@
     <!-- INTRO/SPLASH PAGE -->
     <section id="intro">
       <div class="primary-overlay text-orchid">
-        <div class="container item-hl">
+        <div class="container">
           <div class="row" id="main-header">
             <div class="col-lg-4 col-md-5 align-self-center">
               <div class="row">
                   <div class="secondary-overlay"></div>
-                  <img src="/img/Dyrim Adidas Hoodie - Sorimori copy.png" class="rounded" alt="">
+                  <img src="/img/Dyrim Adidas Hoodie - Sorimori copy.png" class="rounded mx-2" alt="">
                 </div>
             </div>
             <div class="col-lg-8 col-md-7 align-self-center">
               <div class="col">
                 <div class="p-5 bg-darker text-white rounded">
-                  <div class="row justify-content-between align-items-center">
-                    <h1 class="display-4">Regal</h1>
-                    <div>
-                      <a href="https://twitter.com/RegalReindeer" class="text-white" title="Twitter">
-                      <i class="th th-twitter-o"></i></a>
+                  <div class="row align-items-center justify-content-center" id="socialsLinks">
+                    <div class="col-xl-4 col-lg-5 d-none d-lg-block">
+                      <h1 class="display-4 text-left">Regal</h1>
                     </div>
-                    <div>
-                      <a href="https://yiff.life/@Regal" class="text-white" title="Mastodon">
-                      <i class="th th-shrimp"></i></a>
+                    <div class="col-lg-5 d-lg-none mb-3">
+                      <h1 class="display-4 text-center">Regal</h1>
                     </div>
-                    <div>
-                      <a href="https://twitter.com/RegalReindeer" class="text-white">
-                      <i class="th th-discord"></i></a>
-                    </div>
-                    <div>
-                      <a href="https://twitter.com/RegalReindeer" class="text-white">
-                      <i class="th th-envelope"></i></a>
+                    <div class="col-xl-8 col-lg-7 col-md">
+                      <div class="row justify-content-around">
+                        <div class="col-xs-3 text-center">
+                          <a href="https://twitter.com/RegalReindeer" class="text-white" title="Twitter" target="_blank" rel="noopener noreferrer">
+                            <i class="th th-twitter-o" id="socialsIcons"></i></a>
+                        </div>
+                        <div class="col-xs-3 text-center">
+                          <a href="https://yiff.life/@Regal" class="text-white" title="Mastodon" target="_blank" rel="noopener noreferrer">
+                            <i class="th th-shrimp" id="socialsIcons"></i></a>
+                        </div>
+                        <div class="col-xs-3 text-center">
+                          <a href="#" class="text-white" data-toggle="modal" data-target="#discordModal">
+                            <i class="th th-discord" id="socialsIcons"></i><i class="th th-paper-plane" id="socialsIcons"></i></a>
+                        </div>
+                        <div class="col-xs-3 text-center">
+                          <a href="#" class="text-white copyBtn" data-clipboard-text="regaldiscourse@gmail.com" data-toggle="tooltip" data-placement="bottom" data-trigger="click" title="email copied!">
+                            <i class="th th-envelope" id="socialsIcons"></i></a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -53,20 +62,20 @@
                   <!-- JUST SOME SPACE -->
                 </div>
                 <div class="d-flex flex-row text-white align-items-stretch text-center rounded-corner">
-                  <div class="extra-item p-4 bg-lighter rounded" data-target="#home">
-                    <i class="th th-coffee-2"></i>
+                  <div class="extra-item p-4 bg-lighter rounded" data-target="#About">
+                    <i class="th th-coffee-2" id="moreInfoIcons"></i>
                     <span class="d-none d-sm-block">About</span>
                   </div>
-                  <div class="extra-item p-4 bg-lighter" data-target="#home">
-                    <i class="th th-moon-rover-1"></i>
+                  <div class="extra-item p-4 bg-lighter" data-target="#Projects">
+                    <i class="th th-moon-rover-1" id="moreInfoIcons"></i>
                     <span class="d-none d-sm-block">Projects</span>
                   </div>
-                  <div class="extra-item p-4 bg-lighter" data-target="#home">
-                    <i class="th th-fox"></i>
+                  <div class="extra-item p-4 bg-lighter" data-target="#Characaters">
+                    <i class="th th-fox" id="moreInfoIcons"></i>
                     <span class="d-none d-sm-block">Characters</span>
                   </div>
-                  <div class="extra-item p-4 bg-lighter" data-target="#home">
-                    <i class="th th-satellite-dish-1"></i>
+                  <div class="extra-item p-4 bg-lighter" data-toggle="modal" data-target="#contactModal">
+                    <i class="th th-satellite-dish-1" id="moreInfoIcons"></i>
                     <span class="d-none d-sm-block">Contact</span>
                   </div>
                 </div>
@@ -75,7 +84,7 @@
           </div>
         </div>
         <!-- FOOTER -->
-            <footer id="main-footer" class="py-5 text-white m-auto">
+            <footer id="main-footer" class="text-white m-auto">
                 <div class="row text-center">
                   <div class="col-md-12 ml-auto">
                       Copyright @RegalReindeer &copy; <span id="year"></span>
@@ -104,5 +113,60 @@
       // Get the current year for the copyright
       $("#year").text(new Date().getFullYear());
     </script>
+    <script src="/dist/clipboard.js-master/dist/clipboard.min.js"></script>
+    <script>
+      var clipboard = new ClipboardJS('.copyBtn');
+      clipboard.on('success', function(e) {
+          console.log(e);
+      });
+      clipboard.on('error', function(e) {
+          console.log(e);
+      });
+      </script>
+      <script>
+          $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+          })
+      </script>
+  <div class="modal fade" id="discordModal">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title ">Add me on <strong>Discord</strong> or <strong>Telegram</strong></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="d-flex justify-content-around modal-body">
+          <div>
+            <button class="btn btn-dark copyBtn" id="discordUser" data-clipboard-text="Regal#0001" data-toggle="tooltip" data-placement="bottom" data-trigger="click" title="copied!"><i class="th th-discord" id="socialsIcons"></i><div>Regal#0001</div></button>
+          </div>
+          <div>
+            <button class="btn btn-info copyBtn" id="telegramUser" data-clipboard-text="@RegalReindeer" data-toggle="tooltip" data-placement="bottom" data-trigger="click" title="copied!"><i class="th th-paper-plane" id="socialsIcons"></i><div>@RegalReindeer</div></button>
+          </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="contactModal">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title ">Contact Info:</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+          <div class="d-flex justify-content-around modal-body">
+            <div>
+              <button class="btn btn-dark copyBtn" id="discordUser" data-clipboard-text="Regal#0001" data-toggle="tooltip" data-placement="bottom" data-trigger="click" title="copied!"><i class="th th-discord" id="socialsIcons"></i><div>Regal#0001</div></button>
+            </div>
+            <div>
+              <button class="btn btn-info copyBtn" id="telegramUser" data-clipboard-text="@RegalReindeer" data-toggle="tooltip" data-placement="bottom" data-trigger="click" title="copied!"><i class="th th-paper-plane" id="socialsIcons"></i><div>@RegalReindeer</div></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
