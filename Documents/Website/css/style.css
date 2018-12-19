@@ -6,9 +6,10 @@
   min-width: 100%;
 }
 
-#main-header img{
+img{
   width: 100%;
   height: 100%;
+  opacity: .85;
 }
 
 .bg-darker {
@@ -16,7 +17,7 @@
 }
 
 .bg-lighter {
-  background: rgba(156, 29, 93, 0.7);
+  background: rgba(156, 29, 93, 0.8);
 }
 
 .bg-lighter-solid {
@@ -25,7 +26,7 @@
 }
 
 html, body {
-  background: url("/img/AutumnalDeer.jpg") no-repeat 50% 50%;
+  background: url("/img/marc-szeglat-556350-unsplash.jpg") no-repeat 50% 50%;
   height: 100%;
   width: 100%;
   margin: auto;
@@ -34,8 +35,8 @@ html, body {
   font-family: 'Raleway', sans-serif;
 }
 
-#intro .primary-overlay {
-  background: rgba(65, 5, 77, 0.6);
+.primary-overlay {
+  background: rgba(65, 5, 77, 0.4);
   position: fixed;
   top: 0;
   left: 0;
@@ -43,9 +44,8 @@ html, body {
   height: 100%;
 }
 
-#intro .secondary-overlay {
-  background: rgba(221, 23, 23, 0.1);
-  position: absolute;
+.secondary-overlay {
+  background: rgba(221, 23, 23, 0.2);
   width: 100%;
   height: 100%;
 }
