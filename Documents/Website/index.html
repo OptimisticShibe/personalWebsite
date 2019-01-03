@@ -83,7 +83,7 @@
                     <span class="d-none d-sm-block">My OCs</span>
                   </div>
                   <!-- <div class="extra-item p-4 bg-lighter div-link" extLink="https://regal-art.tumblr.com/"> -->
-                    <div class="extra-item p-4 bg-lighter" data-toggle="modal" data-target="#otherLinks">
+                  <div class="extra-item p-4 bg-lighter" data-toggle="modal" data-target="#linksModal">
                     <i class="th th-shrimp" id="moreInfoIcons"></i></a>
                     <span class="d-none d-sm-block">+ Links</span>
                   </div>
@@ -249,7 +249,7 @@
           <h5 class="modal-title">My OCs</h5>
         </div>
         <div class="modal-body">
-          
+
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -258,20 +258,34 @@
     </div>
   </div>
   <!-- Other Links Modal -->
-  <div class="modal fade" id="otherLinks">
+  <div class="modal fade" id="linksModal">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header align-self-center">
           <h5 class="modal-title">Other Links</h5>
         </div>
-        <div class="modal-body"> <!-- Idea: series of divs w/ same size properties that each have an image w/ link -->
-          <div id="otherLinks" class="bg-success col">Test</div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <div class="modal-body">
+          <div class="row text-white align-items-stretch text-center rounded-corner">
+            <div class="col-md-6 col-color p-5">
+              Social Mastodon
+              (Yiff.Life)
+            </div>
+            <div class="col-md-6 col-color p-5">
+              Art Mastodon
+              (Mastodon.art)
+            </div>
+            <div class="col-md-6 col-color p-5">
+              Tumblr
+            </div>
+            <div class="col-md-6 col-color p-5 div-link link-item" extLink="https://curiouscat.me/RegalReindeer">
+              <i class="th th-curious-cat" id="linkModalIcons"></i>
+              <span class="d-block">CuriousCat</span>
+            </div </div> </div> <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 </body>
+
 </html>

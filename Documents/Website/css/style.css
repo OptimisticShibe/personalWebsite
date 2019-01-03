@@ -82,11 +82,20 @@ html, body {
   width: 30%;
   opacity: 0.8;
   cursor: pointer;
-  
+}
+
+#linksModal .link-item:hover {
+  width: 30%;
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 #socialsIcons, #moreInfoIcons {
   font-size: 30px;
+}
+
+#linkModalIcons {
+  font-size: 50px;
 }
 
 .modalIcons {
@@ -104,8 +113,6 @@ html, body {
   width: 100%;
 }
 
-#otherLinks {
-  height: 200px;
-  width: 200px;
-  position: relative;
+.col-color {
+  background-color: olivedrab;
 }
