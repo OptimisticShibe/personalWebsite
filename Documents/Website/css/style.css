@@ -4,7 +4,8 @@
 #main-header {
   min-height: 100%;
   min-width: 100%;
-  animation: 1.3s ease-out 0.5s 1 slideInFromTop;
+  /* Un-comment to re-activate animation 
+  animation: 1.3s ease-out 0.5s 1 slideInFromTop; */
 }
 
 @keyframes slideInFromTop {
@@ -16,6 +17,10 @@
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+#topRow {
+  font-size: 15px;
 }
 
 .secondary-overlay img {
@@ -38,7 +43,7 @@
 }
 
 html, body {
-  background: url("/img/marc-szeglat-556350-unsplash.jpg") no-repeat 50% 50%;
+  background: url("../img/marc-szeglat-556350-unsplash.jpg") no-repeat 50% 50%;
   height: 100%;
   width: 100%;
   margin: auto;

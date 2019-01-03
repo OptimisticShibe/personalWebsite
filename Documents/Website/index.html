@@ -1,68 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/bootstrap.css" crossorigin="anonymous" />
-    <link
-      rel="stylesheet"
-      href="//dl.dropbox.com/s/vpi3f9s7nhpe7v7/honeybee.css"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/style.css" />
 
-    <title>Regal - Developer & Fancy Reindeer</title>
-  </head>
-  <body>
-    <!-- INTRO/SPLASH PAGE -->
-    <section id="intro">
-      <div class="primary-overlay text-orchid">
-        <div class="container">
-          <div class="row" id="main-header">
-            <div class="col-lg-4 col-md-5 align-self-center">
-              <div class="row">
-                <div class="secondary-overlay rounded mx-2">
-                <img src="/img/Dyrim Adidas Hoodie - Sorimori copy.png" class="rounded" alt="art by @sorimmori on Twitter">
-              </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="css/bootstrap.css" crossorigin="anonymous" />
+  <!-- http://honeybee.suiomi.com/ -->
+  <link rel="stylesheet" href="//dl.dropbox.com/s/vpi3f9s7nhpe7v7/honeybee.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css" />
+
+  <title>Regal - Developer & Fancy Reindeer</title>
+</head>
+
+<body>
+  <!-- INTRO/SPLASH PAGE -->
+  <section id="intro">
+    <div class="primary-overlay text-orchid">
+      <div class="container">
+        <div class="row" id="main-header">
+          <div class="col-lg-4 col-md-5 align-self-center">
+            <div class="row">
+              <div class="secondary-overlay rounded mx-2">
+                <img src="img/Dyrim Adidas Hoodie - Sorimori copy.png" class="rounded" alt="art by @sorimmori on Twitter">
               </div>
             </div>
-            <div class="col-lg-8 col-md-7 align-self-center">
-              <div class="col">
-                <div class="p-5 bg-darker text-white rounded">
-                  <div class="row align-items-center justify-content-center" id="socialsLinks">
-                    <div class="col-xl-4 col-lg-5 d-none d-lg-block">
-                      <h1 class="display-4 text-left">Regal</h1>
-                    </div>
-                    <div class="col-lg-5 d-lg-none mb-3">
-                      <h1 class="display-4 text-center">Regal</h1>
-                    </div>
-                    <div class="col-xl-8 col-lg-7 col-md">
-                      <div class="row justify-content-around">
-                        <div class="col-xs-3 text-center">
-                          <a href="https://twitter.com/RegalReindeer" class="text-white js-tooltip" title="Twitter Profile" data-placement="bottom" target="_blank" rel="noopener noreferrer">
-                            <i class="th th-twitter-o" id="socialsIcons"></i></a>
-                        </div>
-                        <div class="col-xs-3 text-center">
-                          <a href="https://yiff.life/@Regal" class="text-white js-tooltip" data-placement="bottom" title="Mastodon Profile" target="_blank" rel="noopener noreferrer">
-                            <i class="th th-shrimp" id="socialsIcons"></i></a>
-                        </div>
-                        <div class="col-xs-3 text-center">
-                          <a href="#" class="text-white js-tooltip" data-toggle="modal" title="Messaging ID #s" data-placement="bottom" data-target="#discordModal">
-                            <i class="th th-discord" id="socialsIcons"></i><i class="th th-paper-plane" id="socialsIcons"></i></a>
-                        </div>
-                        <div class="col-xs-3 text-center">
-                          <a href="#" class="text-white copyBtn js-tooltip js-copy" data-copy="regaldiscourse@gmail.com" data-toggle="tooltip" data-placement="bottom" title="click to copy">
-                            <i class="th th-envelope" id="socialsIcons"></i></a>
-                        </div>
+          </div>
+          <div class="col-lg-8 col-md-7 align-self-center">
+            <div class="col">
+              <div class="p-5 bg-darker text-white rounded">
+                <div class="row align-items-center justify-content-center" id="socialsLinks">
+                  <div class="col-xl-4 col-lg-5 d-none d-lg-block">
+                    <h1 class="display-4 text-left">Regal</h1>
+                  </div>
+                  <div class="col-lg-5 d-lg-none mb-3">
+                    <h1 class="display-4 text-center">Regal</h1>
+                  </div>
+                  <div class="col-xl-8 col-lg-7 col-md" id="topRow">
+                    <div class="row justify-content-around align-items-center">
+                      <div class="col-xs-3 text-center">
+                        <a href="https://twitter.com/RegalReindeer" class="text-white" target="_blank" rel="noopener noreferrer">
+                          <i class="th th-twitter-o" id="socialsIcons"></i></a>
+                        <span class="d-none d-sm-block">Twitter</span>
+                      </div>
+                      <div class="col-xs-3 text-center">
+                        <a href="https://www.furaffinity.net/user/regalreindeer/" class="text-white" target="_blank"
+                          rel="noopener noreferrer">
+                          <i class="th th-fox" id="socialsIcons"></i></a>
+                        <span class="d-none d-sm-block">FurAffinity</span>
+                      </div>
+                      <div class="col-xs-3 text-center">
+                        <a href="https://ko-fi.com/regaldeer" class="text-white" target="_blank" rel="noopener noreferrer">
+                          <i class="th th-ko-fi" id="socialsIcons"></i></a>
+                        <span class="d-none d-sm-block">Ko-Fi</span>
+                      </div>
+                      <div class="col-xs-3 text-center">
+                        <a href="#" class="text-white" data-toggle="modal" data-target="#discordModal">
+                          <i class="th th-discord" id="socialsIcons"></i><i class="th th-paper-plane" id="socialsIcons"></i></a>
+                        <span class="d-none d-sm-block">Contact</span>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="p-4">
-                  <!-- JUST SOME SPACE -->
-                </div>
-                <div>
+              </div>
+              <div class="p-4">
+                <!-- JUST SOME SPACE -->
+              </div>
+              <div>
                 <div class="d-flex flex-row text-white align-items-stretch text-center rounded-corner">
                   <div class="extra-item p-4 bg-lighter rounded" data-toggle="modal" data-target="#aboutModal">
                     <i class="th th-coffee-2" id="moreInfoIcons"></i>
@@ -73,101 +79,95 @@
                     <span class="d-none d-sm-block">Projects</span>
                   </div>
                   <div class="extra-item p-4 bg-lighter" data-target="#Characaters">
-                    <i class="th th-fox" id="moreInfoIcons"></i>
+                    <i class="th th-stars" id="moreInfoIcons"></i>
                     <span class="d-none d-sm-block">My OCs</span>
                   </div>
                   <div class="extra-item p-4 bg-lighter div-link" extLink="https://regal-art.tumblr.com/">
-                      <i class="th th-pencil-1" id="moreInfoIcons"></i></a>
-                    <span class="d-none d-sm-block">Art Blog</span>
+                    <i class="th th-shrimp" id="moreInfoIcons"></i></a>
+                    <span class="d-none d-sm-block">+ Links</span>
                   </div>
                 </div>
-              </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- FOOTER -->
-            <footer id="main-footer" class="text-white m-auto">
-                <div class="row text-center">
-                  <div class="col-md-12 ml-auto">
-                      Copyright @RegalReindeer &copy; <span id="year"></span>
-                  </div>
-              </div>
-            </footer>
       </div>
+      <!-- FOOTER -->
+      <footer id="main-footer" class="text-white m-auto">
+        <div class="row text-center">
+          <div class="col-md-12 ml-auto">
+            Copyright @RegalReindeer &copy; <span id="year"></span>
+          </div>
+        </div>
+      </footer>
+    </div>
     </div>
   </section>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
-      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-      crossorigin="anonymous"></script>
-    <script>
-      // Get the current year for the copyright
-      $("#year").text(new Date().getFullYear());
-    </script>
-    <script>
-      // COPY TO CLIPBOARD
-      // Attempts to use .execCommand('copy') on a created text field
-      // Falls back to a selectable alert if not supported
-      // Attempts to display status in Bootstrap tooltip
-      // Code taken from: https://codepen.io/nathanlong/pen/ZpAmjv
-      // ------------------------------------------------------------------------------
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+  <script>
+    // Get the current year for the copyright
+    $("#year").text(new Date().getFullYear());
+  </script>
+  <script>
+    // COPY TO CLIPBOARD
+    // Attempts to use .execCommand('copy') on a created text field
+    // Falls back to a selectable alert if not supported
+    // Attempts to display status in Bootstrap tooltip
+    // Code taken from: https://codepen.io/nathanlong/pen/ZpAmjv
+    // ------------------------------------------------------------------------------
 
-      function copyToClipboard(text, el) {
-        var copyTest = document.queryCommandSupported('copy');
-        var elOriginalText = el.attr('data-original-title');
+    function copyToClipboard(text, el) {
+      var copyTest = document.queryCommandSupported('copy');
+      var elOriginalText = el.attr('data-original-title');
 
-        if (copyTest === true) {
-          var copyTextArea = document.createElement("textarea");
-          copyTextArea.value = text;
-          document.body.appendChild(copyTextArea);
-          copyTextArea.select();
-          try {
-            var successful = document.execCommand('copy');
-            var msg = successful ? 'Copied!' : 'Whoops, not copied!';
-            el.attr('data-original-title', msg).tooltip('show');
-          } catch (err) {
-            console.log('Oops, unable to copy');
-          }
-          document.body.removeChild(copyTextArea);
-          el.attr('data-original-title', elOriginalText);
-        } else {
-          // Fallback if browser doesn't support .execCommand('copy')
-          window.prompt("Copy to clipboard: Ctrl+C or Command+C, Enter", text);
+      if (copyTest === true) {
+        var copyTextArea = document.createElement("textarea");
+        copyTextArea.value = text;
+        document.body.appendChild(copyTextArea);
+        copyTextArea.select();
+        try {
+          var successful = document.execCommand('copy');
+          var msg = successful ? 'Copied!' : 'Whoops, not copied!';
+          el.attr('data-original-title', msg).tooltip('show');
+        } catch (err) {
+          console.log('Oops, unable to copy');
         }
+        document.body.removeChild(copyTextArea);
+        el.attr('data-original-title', elOriginalText);
+      } else {
+        // Fallback if browser doesn't support .execCommand('copy')
+        window.prompt("Copy to clipboard: Ctrl+C or Command+C, Enter", text);
       }
+    }
 
-      $(document).ready(function() {
-        // Initialize
-        // ---------------------------------------------------------------------
+    $(document).ready(function () {
+      // Initialize
+      // ---------------------------------------------------------------------
 
-        // Tooltips
-        // Requires Bootstrap 3 for functionality
-        $('.js-tooltip').tooltip();
+      // Tooltips
+      // Requires Bootstrap 3 for functionality
+      $('.js-tooltip').tooltip();
 
-        // Copy to clipboard
-        // Grab any text in the attribute 'data-copy' and pass it to the 
-        // copy function
-        $('.js-copy').click(function() {
-          var text = $(this).attr('data-copy');
-          var el = $(this);
-          copyToClipboard(text, el);
-        });
-        $('.div-link').click(function() {
-          var url = $(this).attr('extLink');
-          var win = window.open(url, '_blank');
-          win.focus();
-        });
+      // Copy to clipboard
+      // Grab any text in the attribute 'data-copy' and pass it to the 
+      // copy function
+      $('.js-copy').click(function () {
+        var text = $(this).attr('data-copy');
+        var el = $(this);
+        copyToClipboard(text, el);
       });
-</script>
+      $('.div-link').click(function () {
+        var url = $(this).attr('extLink');
+        var win = window.open(url, '_blank');
+        win.focus();
+      });
+    });
+  </script>
   <div class="modal fade" id="discordModal">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
@@ -176,10 +176,16 @@
         </div>
         <div class="d-flex justify-content-around modal-body">
           <div>
-            <button class="btn btn-dark js-tooltip js-copy" id="discordUser" data-copy="Regal#0001" data-toggle="tooltip" data-placement="bottom" title="click to copy"><i class="th th-discord" id="socialsIcons"></i><div>Regal#0001</div></button>
+            <button class="btn btn-dark js-tooltip js-copy" id="discordUser" data-copy="Regal#0001" data-toggle="tooltip"
+              data-placement="bottom" title="click to copy"><i class="th th-discord" id="socialsIcons"></i>
+              <div>Regal#0001</div>
+            </button>
           </div>
           <div>
-            <button class="btn btn-info js-tooltip js-copy" id="telegramUser" data-copy="@RegalReindeer" data-toggle="tooltip" data-placement="bottom" title="click to copy"><i class="th th-paper-plane" id="socialsIcons"></i><div>@RegalReindeer</div></button>
+            <button class="btn btn-info js-tooltip js-copy" id="telegramUser" data-copy="@RegalReindeer" data-toggle="tooltip"
+              data-placement="bottom" title="click to copy"><i class="th th-paper-plane" id="socialsIcons"></i>
+              <div>@RegalReindeer</div>
+            </button>
           </div>
         </div>
         <div class="modal-footer">
@@ -195,15 +201,20 @@
           <h5 class="modal-title">Hi I'm Regal <i class="th th-spaceship-o"></i><i class="th th-stars-o"></i></h5>
         </div>
         <div class="modal-body">
-          <p><i class="th th-solar-system-2-o modalIcons"></i> I'm a somewhat-new furry who works professionally as a Java developer, and spends his free time doing: </p>
-            <p class="text-center lead"><i class="th th-monster"></i> Art
-              <br><i class="th th-code"></i> Coding
-              <br>Weightlifting
-              <br>DnD
-              <br><i class="th th-coffee-beans"></i> Coffee
-            </p>
-          <p><i class="th th-planet-1-o modalIcons"></i>
-            My socials and contacts are listed elsewhere on the page, please feel free to reach out if you have any questions or just want to chat!
+          <p>I'm a chill furry who works professionally as a
+            Java developer, and spends his free time doing this stuff: </p>
+          <p class="lead">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item"><i class="th th-monster"></i> Art</li>
+              <li class="list-inline-item"><i class="th th-code"></i> Coding</li>
+              <li class="list-inline-item"><i class="fas fa-dumbbell"></i> Weightlifting</li>
+              <li class="list-inline-item"><i class="fab fa-d-and-d"></i> DnD</li>
+              <li class="list-inline-item"><i class="th th-coffee-beans"></i> Coffee</li>
+            </ul>
+          </p>
+          <p>
+            My socials and contacts are listed elsewhere on the page, please feel free to reach out if you have any
+            questions or just want to chat! <i class="th th-shrimp"></i>
           </p>
         </div>
         <div class="modal-footer">
@@ -212,5 +223,6 @@
       </div>
     </div>
   </div>
-  </body>
+</body>
+
 </html>
