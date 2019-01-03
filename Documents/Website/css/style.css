@@ -103,3 +103,9 @@ html, body {
   height: 100%;
   width: 100%;
 }
+
+#otherLinks {
+  height: 200px;
+  width: 200px;
+  position: relative;
+}

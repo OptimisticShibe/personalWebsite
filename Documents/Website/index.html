@@ -74,15 +74,16 @@
                     <i class="th th-coffee-2" id="moreInfoIcons"></i>
                     <span class="d-none d-sm-block">About</span>
                   </div>
-                  <div class="extra-item p-4 bg-lighter" data-target="#Projects">
+                  <div class="extra-item p-4 bg-lighter" data-toggle="modal" data-target="#projectsModal">
                     <i class="th th-moon-rover-1" id="moreInfoIcons"></i>
                     <span class="d-none d-sm-block">Projects</span>
                   </div>
-                  <div class="extra-item p-4 bg-lighter" data-target="#Characaters">
+                  <div class="extra-item p-4 bg-lighter" data-toggle="modal" data-target="#ocsModal">
                     <i class="th th-stars" id="moreInfoIcons"></i>
                     <span class="d-none d-sm-block">My OCs</span>
                   </div>
-                  <div class="extra-item p-4 bg-lighter div-link" extLink="https://regal-art.tumblr.com/">
+                  <!-- <div class="extra-item p-4 bg-lighter div-link" extLink="https://regal-art.tumblr.com/"> -->
+                    <div class="extra-item p-4 bg-lighter" data-toggle="modal" data-target="#otherLinks">
                     <i class="th th-shrimp" id="moreInfoIcons"></i></a>
                     <span class="d-none d-sm-block">+ Links</span>
                   </div>
@@ -168,6 +169,7 @@
       });
     });
   </script>
+  <!-- Discord and Telegram Modal -->
   <div class="modal fade" id="discordModal">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
@@ -194,6 +196,7 @@
       </div>
     </div>
   </div>
+  <!-- About Modal -->
   <div class="modal fade" id="aboutModal">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
@@ -223,6 +226,52 @@
       </div>
     </div>
   </div>
+  <!-- Projects Modal -->
+  <div class="modal fade" id="projectsModal">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header align-self-center">
+          <h5 class="modal-title">My current projects</h5>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- OCs Modal -->
+  <div class="modal fade" id="ocsModal">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header align-self-center">
+          <h5 class="modal-title">My OCs</h5>
+        </div>
+        <div class="modal-body">
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Other Links Modal -->
+  <div class="modal fade" id="otherLinks">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header align-self-center">
+          <h5 class="modal-title">Other Links</h5>
+        </div>
+        <div class="modal-body"> <!-- Idea: series of divs w/ same size properties that each have an image w/ link -->
+          <div id="otherLinks" class="bg-success col">Test</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
-
 </html>
