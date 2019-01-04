@@ -95,7 +95,7 @@ html, body {
 }
 
 #linkModalIcons {
-  font-size: 50px;
+  font-size: 65px;
 }
 
 .modalIcons {
@@ -115,4 +115,9 @@ html, body {
 
 .col-color {
   background-color: olivedrab;
+}
+
+img#yiffLife {
+  max-height: 60%;
+  max-width: 60%;
 }
