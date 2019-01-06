@@ -85,8 +85,23 @@ html, body {
 }
 
 #linksModal .link-item:hover {
-  width: 30%;
+  width: 60%;
   opacity: 0.8;
+  cursor: pointer;
+}
+
+#ocPic.link-item:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.projectsHeader {
+  background-color: #B2322E;
+}
+
+.projectsHeader:hover {
+  /* background-color: rgba(194, 86, 82, 0.788); */
+  opacity: 0.7;
   cursor: pointer;
 }
 

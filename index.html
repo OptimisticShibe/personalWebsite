@@ -200,14 +200,14 @@
   <div class="modal fade" id="aboutModal">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
-        <div class="modal-header align-self-center">
+        <div class="modal-header justify-content-center">
           <h3 class="modal-title">Hi I'm Regal <i class="th th-spaceship-o"></i><i class="th th-stars-o"></i></h3>
         </div>
         <div class="modal-body">
           <p>I'm a chill furry who works professionally as a
             Java developer, and spends his free time doing this stuff: </p>
           <p class="lead">
-            <ul class="list-inline text-center">
+            <ul class="list-inline text-center bg-light">
               <li class="list-inline-item"><i class="th th-monster"></i> Art</li>
               <li class="list-inline-item"><i class="th th-code"></i> Coding</li>
               <li class="list-inline-item"><i class="fas fa-dumbbell"></i> Weightlifting</li>
@@ -227,48 +227,135 @@
     </div>
   </div>
   <!-- Projects Modal -->
+  <!-- Idea: Accordian function to display info + links, if relevant -->
   <div class="modal fade" id="projectsModal">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
-        <div class="modal-header align-self-center">
-          <h3 class="modal-title">My current projects</h3>
+        <div class="modal-header justify-content-center">
+          <h3 class="modal-title">Current And Past Projects</h3>
         </div>
         <div class="modal-body">
+            <!-- <h6 class="text-muted"><em>Click Banners For More Info</em></h6> -->
+          <!--ACCORDIAN-->
+            <div class="accordion" id="accordionExample">
+                <div class="card bg-light">
+                  <div class="card-header projectsHeader text-white" id="headingOne" style="background-color: rgb(129, 47, 110);" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      <div class="p-1 m-2 rounded">
+                        <p class="d-block h2">Twitter Bot <i class="th th-space-robot"></i></p>
+                        <p class="d-block lead">A custom "e_books" bot built on node.js</p>
+                      </div>
+                  </div>
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                      <p class="card-text">Overview
+                          What it does: This bot produces and tweets an algorithmically-generated (usually) readable sentence made up of phrases taken from a large collection of source tweets elsewhere on twitter. It tweets every 30 minutes, 24/7, and will not post pictures, reply, @-mention others, or use hashtags.
+                          
+                          How does it work:
+                          
+                          Every 30 minutes, the bot runs off of a cronjob and collects up to 1,000 tweets from each of the source twitter accounts, one by one.
+                          
+                          The entire tweet collection is then run through a Markov-chain algorithmic scheme to produce 10 new tweetable phrases.
+                          
+                          These 10 tweets are filtered to remove hashtags, @-mentions, and other twitter-style addendums.
+                          
+                          1 of these 10 tweets is selected, and further filtered through a custom NSFW word filter that locates and replaces specific words and phrases with less crass alternatives.
+                          
+                          The now-sanitized tweet is then potentially altered with any number of 'fun' adjustments to further randomize the final product. (e.g. All caps, random tweet shortening)
+                          
+                          The final tweet is then tweeted by @BeeSquadBot on twitter, via Twit package and the Twitter API.</p>
+                      <img src="img/BeeSquadBotIcon - Jairus.jpeg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="card bg-light">
+                  <div class="card-header projectsHeader text-white" style="background-color: rgb(212, 158, 41);" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <div class="p-1 m-2 rounded">
+                          <p class="d-block h2">AdriBot <i class="th th-knife"></i></p>
+                          <p class="d-block lead">A collab Discord bot built on vanilla js</p>
+                        </div>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="card bg-light">
+                  <div class="card-header projectsHeader text-white" style="background-color: #B74F27;" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      <div class="p-1 m-2 rounded">
+                          <p class="d-block h2">Personal Webpage <i class="th th-code"></i></p>
+                          <p class="d-block lead">*This Site* built with Bootstrap 4</p>
+                        </div>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+          <!-- BUTTON COLLAPSE -->
+          <!-- <div class="d-flex flex-column align-items-stretch justify-content-center text-center rounded-corner">
+            <div class="p-4 m-2 rounded" data-toggle="collapse" data-target="#ex1" aria-expanded="false" aria-controls="collapseExample" style="background-color: #B2322E;">
+              <span class="d-block">Twitter Bot</span>
+            </div>
+            <div class="collapse" id="ex1">
+                <div class="card card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                </div>
+              </div>
+            <div class="p-4 m-2 rounded" data-toggle="collapse" data-target="#ex2" aria-expanded="false" aria-controls="collapseExample" style="background-color: #B26511;">
+              <span class="d-block">AdriBot (Discord Bot)</span>
+            </div>
+            <div class="collapse" id="ex2">
+                <div class="card card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                </div>
+              </div>
+          </div> -->
+
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
+      </div>
     </div>
   </div>
   <!-- OCs Modal -->
-  <!-- Idea: 1 div per character, nice rounded background, and then image + some info in there -->
   <div class="modal fade" id="ocsModal">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
-        <div class="modal-header align-self-center">
-          <h3 class="modal-title">My OCs</h3>
+        <div class="modal-header justify-content-center">
+          <h3>My OCs</h3>
         </div>
         <div class="modal-body">
           <div class="align-items-stretch rounded-corner text-white">
+            <div class="d-flex">
+              <h6 class="text-muted"><em>(Click Images for More Info)</em></h6>
+            </div>
             <div class="d-flex row px-2">
               <div class="col-5">
                 <div class="rounded" style="background-color: #A33442;">
-                  <img src="/img/Dyrim Icon Muscle (circle) - Eli.png" class="rounded p-1" alt="art by @ehartworks" style="max-height: 100%; max-width: 100%;">
+                  <img src="/img/Dyrim Icon Muscle (circle) - Eli.png" class="p-1 div-link link-item" alt="art by @ehartworks" style="max-height: 100%; max-width: 100%;" extLink="https://refsheet.net/RegalReindeer/dyrim" id="ocPic">
                 </div>
               </div>
               <div class="col-7 rounded" style="background-color: #B26511;">
-                <h2 class="my-2">Dyrim</h2>
-                <blockquote class="blockquote">Dummy Text</blockquote>
+                <p class="my-2"><span class="h2">Dyrim</span> (she/her)</p>
+                <p class="lead">Strong Lightning Lizard! <i class="th th-voltmeter-o"></i>
+                  Rock Climbing, Caramel Lattes, and Girls! <i class="th th-rose" title="that's pussy babe"></i></p>
               </div>
             </div>
             <div class="py-2"></div>
             <div class="d-flex row px-2">
               <div class="col-5">
-                  <img src="/img/Regal Deer - Jairus style.png" class="rounded" alt="art by @ehartworks" style="max-height: 100%; max-width: 100%;">
+                  <img src="/img/Regal Deer - Jairus style.png" class="rounded div-link link-item" alt="art by @ehartworks" style="max-height: 100%; max-width: 100%;" extLink="https://refsheet.net/RegalReindeer/regal-deer" id="ocPic">
                 </div>
                 <div class="col-7 rounded" style="background-color: #B27F26;">
-                  <p>Dummy Text</p>
+                    <p class="my-2"><span class="h2">Regal Deer</span> (he/him)</p>
+                    <p class="lead">Cool Reindeer Fursona! <i class="th th-atom"></i>
+                      Weightlifting, Black Coffee, and Coding! <i class="th th-database-2-o"></i></p>
                 </div>
               </div>
             </div>
@@ -283,7 +370,7 @@
   <div class="modal fade" id="linksModal">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
-        <div class="modal-header align-self-center">
+        <div class="modal-header justify-content-center">
           <h3 class="modal-title">Other Social Links</h3>
         </div>
         <div class="modal-body">
