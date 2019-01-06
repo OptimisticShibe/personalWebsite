@@ -229,7 +229,7 @@
   <!-- Projects Modal -->
   <!-- Idea: Accordian function to display info + links, if relevant -->
   <div class="modal fade" id="projectsModal">
-    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header justify-content-center">
           <h3 class="modal-title">Current And Past Projects</h3>
@@ -247,23 +247,22 @@
                   </div>
                   <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                     <div class="card-body">
-                      <p class="card-text">Overview
-                          What it does: This bot produces and tweets an algorithmically-generated (usually) readable sentence made up of phrases taken from a large collection of source tweets elsewhere on twitter. It tweets every 30 minutes, 24/7, and will not post pictures, reply, @-mention others, or use hashtags.
-                          
-                          How does it work:
-                          
-                          Every 30 minutes, the bot runs off of a cronjob and collects up to 1,000 tweets from each of the source twitter accounts, one by one.
-                          
-                          The entire tweet collection is then run through a Markov-chain algorithmic scheme to produce 10 new tweetable phrases.
-                          
-                          These 10 tweets are filtered to remove hashtags, @-mentions, and other twitter-style addendums.
-                          
-                          1 of these 10 tweets is selected, and further filtered through a custom NSFW word filter that locates and replaces specific words and phrases with less crass alternatives.
-                          
-                          The now-sanitized tweet is then potentially altered with any number of 'fun' adjustments to further randomize the final product. (e.g. All caps, random tweet shortening)
-                          
-                          The final tweet is then tweeted by @BeeSquadBot on twitter, via Twit package and the Twitter API.</p>
-                      <img src="img/BeeSquadBotIcon - Jairus.jpeg" alt="">
+                      <h4 class="card-title">BeeSquadBot</h4>
+                      <p class="card-subtitle text-muted mb-2">
+                        A light-hearted experiment with the Twitter API, node.js and markov-string concatenation.
+                      </p>
+                      <p class="lead">
+                        What started as a messy experiment with Node turned into a silly (still messy) project that left me much better informed about Node, Javascript, and async promises.
+                      </p>
+                      <p class="card-text">
+                        Honestly I don't follow my bot on my main account, and rarely check in on it....but my friends love it--especially those whose tweets contribute to its madness, and that's what really makes it worth it in the end for me.
+                      </p>
+                      <p class="card-text">
+                        Please visit the links below to see the bot in action, or to check out my GitHub repo:
+                      </p>
+                      <!-- <img src="img/BeeSquadBotIcon - Jairus.jpeg" class="" alt=""> -->
+                      <a href="https://twitter.com/BeeSquadBot" class="card-link" target="_blank" rel="noopener noreferrer">@BeeSquadBot on Twitter</a>
+                      <a href="https://github.com/OptimisticShibe/Optimist_Ebooks" class="card-link" target="_blank" rel="noopener noreferrer">Github Repo</a>
                     </div>
                   </div>
                 </div>
@@ -295,26 +294,6 @@
                 </div>
               </div>
 
-          <!-- BUTTON COLLAPSE -->
-          <!-- <div class="d-flex flex-column align-items-stretch justify-content-center text-center rounded-corner">
-            <div class="p-4 m-2 rounded" data-toggle="collapse" data-target="#ex1" aria-expanded="false" aria-controls="collapseExample" style="background-color: #B2322E;">
-              <span class="d-block">Twitter Bot</span>
-            </div>
-            <div class="collapse" id="ex1">
-                <div class="card card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                </div>
-              </div>
-            <div class="p-4 m-2 rounded" data-toggle="collapse" data-target="#ex2" aria-expanded="false" aria-controls="collapseExample" style="background-color: #B26511;">
-              <span class="d-block">AdriBot (Discord Bot)</span>
-            </div>
-            <div class="collapse" id="ex2">
-                <div class="card card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                </div>
-              </div>
-          </div> -->
-
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -325,7 +304,7 @@
   </div>
   <!-- OCs Modal -->
   <div class="modal fade" id="ocsModal">
-    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header justify-content-center">
           <h3>My OCs</h3>
@@ -333,29 +312,32 @@
         <div class="modal-body">
           <div class="align-items-stretch rounded-corner text-white">
             <div class="d-flex">
-              <h6 class="text-muted"><em>(Click Images for More Info)</em></h6>
+              <h6 class="text-muted"><em>(Click Images for More Art & Info)</em></h6>
             </div>
             <div class="d-flex row px-2">
               <div class="col-5">
                 <div class="rounded" style="background-color: #A33442;">
-                  <img src="/img/Dyrim Icon Muscle (circle) - Eli.png" class="p-1 div-link link-item" alt="art by @ehartworks" style="max-height: 100%; max-width: 100%;" extLink="https://refsheet.net/RegalReindeer/dyrim" id="ocPic">
+                  <img src="img/Dyrim Icon Muscle (circle) - Eli.png" class="p-1 div-link link-item" alt="art by @ehartworks" style="max-height: 100%; max-width: 100%;" extLink="https://refsheet.net/RegalReindeer/dyrim" id="ocPic">
                 </div>
               </div>
               <div class="col-7 rounded" style="background-color: #B26511;">
                 <p class="my-2"><span class="h2">Dyrim</span> (she/her)</p>
                 <p class="lead">Strong Lightning Lizard! <i class="th th-voltmeter-o"></i>
                   Rock Climbing, Caramel Lattes, and Girls! <i class="th th-rose" title="that's pussy babe"></i></p>
+                  <p class="d-none d-lg-block">Dyrim is a "Lightning Lizard," a unique race of reptiles with true gold anatomical features <i class="th th-diamond-o"></i></p>
+                  <p class="d-none d-lg-block">She's a confident go-getter up for any physical task, be it rock climbing, weightlifting, or even cage fighting. She turns into a hot mess around cute girls, however. <i class="th th-heart-1"></i></p>
               </div>
             </div>
             <div class="py-2"></div>
             <div class="d-flex row px-2">
               <div class="col-5">
-                  <img src="/img/Regal Deer - Jairus style.png" class="rounded div-link link-item" alt="art by @ehartworks" style="max-height: 100%; max-width: 100%;" extLink="https://refsheet.net/RegalReindeer/regal-deer" id="ocPic">
+                  <img src="img/Regal Deer - Jairus style.png" class="rounded div-link link-item" alt="art by @ehartworks" style="max-height: 100%; max-width: 100%;" extLink="https://refsheet.net/RegalReindeer/regal-deer" id="ocPic">
                 </div>
                 <div class="col-7 rounded" style="background-color: #B27F26;">
                     <p class="my-2"><span class="h2">Regal Deer</span> (he/him)</p>
                     <p class="lead">Cool Reindeer Fursona! <i class="th th-atom"></i>
                       Weightlifting, Black Coffee, and Coding! <i class="th th-database-2-o"></i></p>
+                      <p class="d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt odit dolores, dolorum nostrum facilis quia eligendi voluptates nemo fugit sapiente hic tempora laboriosam dicta recusandae perferendis! Perspiciatis reiciendis eius officia corrupti adipisci rem porro nihil sint? Eaque magni ut ducimus neque. Omnis, ex. Sed, nisi.</p>
                 </div>
               </div>
             </div>
