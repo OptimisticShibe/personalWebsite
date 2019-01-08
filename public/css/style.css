@@ -5,7 +5,7 @@
   min-height: 100%;
   min-width: 100%;
   /* Un-comment to re-activate animation */
-  /* animation: 1.3s ease-out 0.5s 1 slideInFromTop;  */
+  animation: 1.3s ease-out 0.5s 1 slideInFromTop;
 }
 
 @keyframes slideInFromTop {
