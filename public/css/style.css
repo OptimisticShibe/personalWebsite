@@ -52,9 +52,14 @@ html, body {
   font-family: 'Raleway', sans-serif;
 }
 
+.container {
+  height: 100%;
+  width: 100%;
+}
+
 .primary-overlay {
   background: rgba(65, 5, 77, 0.4);
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
