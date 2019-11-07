@@ -23,7 +23,7 @@
   font-size: 15px;
 }
 /* Custom workings on the large image */
-.secondary-overlay img {
+#mainPic {
   width: 100%;
   height: 100%;
   opacity: .85;

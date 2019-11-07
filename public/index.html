@@ -21,92 +21,119 @@
     <section id="intro">
       <div class="primary-overlay">
         <div class="container">
-          <div class="row" id="main-header">
-            <div class="col-lg-4 col-md-5 align-self-center">
-              <div class="row no-gutters">
-                <div class="secondary-overlay rounded">
-                  <img src="img/Dyrim Adidas Hoodie - Sorimori copy.png" class="rounded"
-                    alt="art by @sorimmori on Twitter">
-                </div>
+          <header id="main-header">
+            <div class="row no-gutters">
+              <!-- might be some issues here w/ secondary overlay -->
+              <!-- <div class="col-lg-4 col-md-5 secondary-overlay rounded"> -->
+              <div class="col-lg-4 col-md-5">
+                <img src="img/Dyrim Adidas Hoodie - Sorimori copy.png" id="mainPic" class="rounded"
+                  alt="art by @sorimmori on Twitter">
               </div>
-            </div>
-            <div class="col-lg-8 col-md-7 align-self-center">
-              <div class="col">
-                <div class="p-5 bg-darker text-white rounded">
-                  <div class="row align-items-center justify-content-center" id="socialsLinks">
-                    <div class="col-xl-4 col-lg-5 d-none d-lg-block">
-                      <h1 class="display-4 text-left">Regal</h1>
+              <div class="col-lg-8 col-md-7">
+                <div class="d-flex flex-column">
+                  <!-- in Traversy, this is the grey/dark box w/ John Doe -->
+                  <div class="p-5 bg-darker text-white rounded">
+                    <div class="d-flex flex-row justify-content-between align-items-center">
+                      <h1 class="display-4">Regal</h1>
+                      <div>
+                        <a href="https://twitter.com/RegalRegex" class="text-white" target="_blank"
+                          rel="noopener noreferrer">
+                          <i class="th th-twitter-o" id="socialsIcons"></i></a>
+                        <span class="d-none d-sm-block">Twitter</span>
+                      </div>
+                      <div class="d-none d-lg-block">
+                        <a href="https://www.furaffinity.net/user/regalreindeer/" class="text-white" target="_blank"
+                          rel="noopener noreferrer">
+                          <i class="th th-fox" id="socialsIcons"></i></a>
+                        <span class="d-none d-sm-block">FurAffinity</span>
+                      </div>
+                      <div class="d-none d-lg-block">
+                        <a href="https://ko-fi.com/regaldeer" class="text-white" target="_blank"
+                          rel="noopener noreferrer">
+                          <i class="th th-ko-fi" id="socialsIcons"></i></a>
+                        <span class="d-none d-sm-block">Ko-Fi</span>
+                      </div>
+                      <div class="d-none d-sm-block">
+                        <a href="#" class="text-white" data-toggle="modal" data-target="#discordModal">
+                          <i class="th th-discord" id="socialsIcons"></i><i class="th th-paper-plane"
+                            id="socialsIcons"></i></a>
+                        <span class="d-none d-sm-block">Contact</span>
+                      </div>
                     </div>
-                    <div class="col-lg-5 d-lg-none mb-3">
-                      <h1 class="display-4 text-center">Regal</h1>
-                    </div>
-                    <div class="col-xl-8 col-lg-7 col-md" id="topRow">
-                      <div class="row justify-content-around align-items-center">
-                        <div class="col-xs-3 text-center">
-                          <a href="https://twitter.com/RegalRegex" class="text-white" target="_blank"
-                            rel="noopener noreferrer">
-                            <i class="th th-twitter-o" id="socialsIcons"></i></a>
-                          <span class="d-none d-sm-block">Twitter</span>
-                        </div>
-                        <div class="col-xs-3 text-center">
-                          <a href="https://www.furaffinity.net/user/regalreindeer/" class="text-white" target="_blank"
-                            rel="noopener noreferrer">
-                            <i class="th th-fox" id="socialsIcons"></i></a>
-                          <span class="d-none d-sm-block">FurAffinity</span>
-                        </div>
-                        <div class="col-xs-3 text-center">
-                          <a href="https://ko-fi.com/regaldeer" class="text-white" target="_blank"
-                            rel="noopener noreferrer">
-                            <i class="th th-ko-fi" id="socialsIcons"></i></a>
-                          <span class="d-none d-sm-block">Ko-Fi</span>
-                        </div>
-                        <div class="col-xs-3 text-center">
-                          <a href="#" class="text-white" data-toggle="modal" data-target="#discordModal">
-                            <i class="th th-discord" id="socialsIcons"></i><i class="th th-paper-plane"
-                              id="socialsIcons"></i></a>
-                          <span class="d-none d-sm-block">Contact</span>
-                        </div>
+                  </div>
+
+                  <div class="p-4 d-none d-md-block">
+                  </div>
+
+                  <div>
+                    <div class="d-flex flex-row text-white align-items-stretch text-center rounded-corner">
+                      <div class="extra-item p-4 bg-lighter" data-toggle="modal" data-target="#aboutModal">
+                        <i class="th th-coffee-2 d-block" id="moreInfoIcons"></i>
+                        <span class="d-none d-sm-block">About</span>
+                      </div>
+                      <div class="extra-item p-4 bg-lighter" data-toggle="modal" data-target="#projectsModal">
+                        <i class="th th-bee d-block" id="moreInfoIcons"></i>
+                        <span class="d-none d-sm-block">Projects</span>
+                      </div>
+                      <div class="extra-item p-4 bg-lighter" data-toggle="modal" data-target="#ocsModal">
+                        <i class="th th-stars d-block" id="moreInfoIcons"></i>
+                        <span class="d-none d-sm-block">My OCs</span>
+                      </div>
+                      <!-- <div class="extra-item p-4 bg-lighter div-link" extLink="https://regal-art.tumblr.com/"> -->
+                      <div class="extra-item p-4 bg-lighter" data-toggle="modal" data-target="#linksModal">
+                        <i class="th th-shrimp d-block" id="moreInfoIcons"></i></a>
+                        <span class="d-none d-sm-block">+ Links</span>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="p-4">
-                  <!-- JUST SOME SPACE -->
+          </header>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- <div class="col-lg-8 col-md-7 align-self-center">
+              <div class="col"> -->
+  <!-- <div class="p-5 bg-darker text-white rounded">
+              <div class="row align-items-center justify-content-center" id="socialsLinks">
+                <div class="col-xl-4 col-lg-5 d-none d-lg-block">
+
                 </div>
-                <div>
-                  <div class="d-flex flex-row text-white align-items-stretch text-center rounded-corner">
-                    <div class="extra-item p-4 bg-lighter" data-toggle="modal" data-target="#aboutModal">
-                      <i class="th th-coffee-2" id="moreInfoIcons"></i>
-                      <span class="d-none d-sm-block">About</span>
+                <div class="col-lg-5 d-lg-none mb-3">
+                  <h1 class="display-4 text-center">Regal</h1>
+                </div>
+                <div class="col-xl-8 col-lg-7 col-md" id="topRow">
+                  <div class="row justify-content-around align-items-center">
+
+                    <div class="col-xs-3 text-center">
+
                     </div>
-                    <div class="extra-item p-4 bg-lighter" data-toggle="modal" data-target="#projectsModal">
-                      <i class="th th-moon-rover-1" id="moreInfoIcons"></i>
-                      <span class="d-none d-sm-block">Projects</span>
+                    <div class="col-xs-3 text-center">
+
                     </div>
-                    <div class="extra-item p-4 bg-lighter" data-toggle="modal" data-target="#ocsModal">
-                      <i class="th th-stars" id="moreInfoIcons"></i>
-                      <span class="d-none d-sm-block">My OCs</span>
-                    </div>
-                    <!-- <div class="extra-item p-4 bg-lighter div-link" extLink="https://regal-art.tumblr.com/"> -->
-                    <div class="extra-item p-4 bg-lighter" data-toggle="modal" data-target="#linksModal">
-                      <i class="th th-shrimp" id="moreInfoIcons"></i></a>
-                      <span class="d-none d-sm-block">+ Links</span>
+                    <div class="col-xs-3 text-center">
+
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <!-- FOOTER -->
-        <footer id="main-footer" class="text-white m-auto">
-          <div class="row text-center">
-            <div class="col-md-12 ml-auto">
-              Copyright @RegalRegex &copy; <span id="year"></span>
-            </div>
-          </div>
-        </footer>
+            </div> -->
+  <div class="p-4">
+    <!-- JUST SOME SPACE -->
+  </div>
+
+  </div>
+  </header>
+  </div>
+  <!-- FOOTER -->
+  <footer id="main-footer" class="text-white m-auto">
+    <div class="row text-center">
+      <div class="col-md-12 ml-auto">
+        Copyright @RegalRegex &copy; <span id="year"></span>
       </div>
+    </div>
+  </footer>
+  </div>
   </div>
   </section>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
