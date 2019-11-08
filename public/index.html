@@ -22,14 +22,14 @@
       <div class="primary-overlay">
         <div class="container">
           <header id="main-header">
-            <div class="row no-gutters">
+            <div class="row no-gutters align-items-center">
               <!-- might be some issues here w/ secondary overlay -->
               <!-- <div class="col-lg-4 col-md-5 secondary-overlay rounded"> -->
-              <div class="col-lg-4 col-md-5">
-                <img src="img/Dyrim Adidas Hoodie - Sorimori copy.png" id="mainPic" class="rounded"
+              <div class="col-xl-3 col-lg-4 col-md-5">
+                <img src="img/Dyrim Adidas Hoodie - Sorimori copy.png" id="mainPic" class="rounded align-self-center"
                   alt="art by @sorimmori on Twitter">
               </div>
-              <div class="col-lg-8 col-md-7">
+              <div class="col-xl-9 col-lg-8 col-md-7">
                 <div class="d-flex flex-column">
                   <!-- in Traversy, this is the grey/dark box w/ John Doe -->
                   <div class="p-5 bg-darker text-white rounded">
@@ -67,26 +67,36 @@
 
                   <div>
                     <div class="d-flex flex-row text-white align-items-stretch text-center rounded-corner">
-                      <div class="extra-item p-4 bg-lighter" data-toggle="modal" data-target="#aboutModal">
+                      <div class="extra-item p-4 bg-lighter d-none d-sm-block" data-toggle="modal" data-target="#aboutModal">
                         <i class="th th-coffee-2 d-block" id="moreInfoIcons"></i>
                         <span class="d-none d-sm-block">About</span>
                       </div>
-                      <div class="extra-item p-4 bg-lighter" data-toggle="modal" data-target="#projectsModal">
+                      <div class="extra-item p-4 bg-lighter d-none d-sm-block" data-toggle="modal" data-target="#projectsModal">
                         <i class="th th-bee d-block" id="moreInfoIcons"></i>
                         <span class="d-none d-sm-block">Projects</span>
                       </div>
-                      <div class="extra-item p-4 bg-lighter" data-toggle="modal" data-target="#ocsModal">
+                      <div class="extra-item p-4 bg-lighter d-none d-sm-block" data-toggle="modal" data-target="#ocsModal">
                         <i class="th th-stars d-block" id="moreInfoIcons"></i>
-                        <span class="d-none d-sm-block">My OCs</span>
+                        <span class="d-none d-sm-block">OCs</span>
                       </div>
-                      <!-- <div class="extra-item p-4 bg-lighter div-link" extLink="https://regal-art.tumblr.com/"> -->
-                      <div class="extra-item p-4 bg-lighter" data-toggle="modal" data-target="#linksModal">
-                        <i class="th th-shrimp d-block" id="moreInfoIcons"></i></a>
-                        <span class="d-none d-sm-block">+ Links</span>
+                      <div class="extra-item p-4 bg-lighter d-none d-sm-block" data-toggle="modal" data-target="#linksModal">
+                        <i class="th th-shrimp d-block" id="moreInfoIcons"></i>
+                        <span class="d-none d-sm-block">Links</span>
+                      </div>
+                      <!-- Copies of About and Links for small screens -->
+                      <div class="extra-item-s p-4 bg-lighter d-xs-block d-sm-none" data-toggle="modal" data-target="#aboutModal">
+                        <i class="th th-coffee-2 d-block" id="moreInfoIcons"></i>
+                        <span>About</span>
+                      </div>
+                      <div class="extra-item-s p-4 bg-lighter d-xs-block d-sm-none" data-toggle="modal" data-target="#linksModal">
+                        <i class="th th-shrimp d-block" id="moreInfoIcons"></i>
+                        <span>Links</span>
                       </div>
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
           </header>
         </div>
       </div>

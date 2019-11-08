@@ -25,7 +25,7 @@
 /* Custom workings on the large image */
 #mainPic {
   width: 100%;
-  height: 100%;
+  height: auto;
   opacity: .85;
 }
 
@@ -98,6 +98,9 @@ body, html {
 #main-header .extra-item {
   width: 30%;
 }
+#main-header .extra-item-s {
+  width: 60%;
+}
 #main-header .extra-item:hover {
   width: 30%;
   opacity: 0.8;
@@ -140,6 +143,9 @@ body, html {
 @media(min-width: 1199px) {
   .extra-item {
     padding: 3em !important;
+  }
+  .extra-item-s {
+    padding: 6em !important;
   }
 }
 
